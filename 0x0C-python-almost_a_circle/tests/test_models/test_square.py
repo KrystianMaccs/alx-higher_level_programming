@@ -595,8 +595,7 @@ class TestSquare(unittest.TestCase):
             S = Square(1, 1, -2, -2)
         with self.assertRaises(TypeError):
             S = Square()
-        with self.assertRaises(TypeError)
-
+        with self.assertRaises(TypeError):
             S = Square(1, 2, 3, 4, 5, 6, 7)
 
     def test_inputted_types(self):

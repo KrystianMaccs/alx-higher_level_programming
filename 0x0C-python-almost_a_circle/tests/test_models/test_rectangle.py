@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 from contextlib import redirect_stdout
-import ispect
+import inspect
 
 import io
-import uittest
+import unittest
 
 import os
 from models.base import Base
@@ -574,7 +574,7 @@ class TestRectangle(unittest.TestCase):
     def test_wrong_inputted_values(self):
         """
         Test for negative and zero values
-        ""
+        """
 
         with self.assertRaises(ValueError):
             R = Rectangle(0, 0)
